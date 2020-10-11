@@ -1,20 +1,29 @@
 package Helpers;
 
 /*
-*  Helper class for a collection of ids of elements and credentials.
-* */
+ *  Helper class for a collection of ids of elements and credentials.
+ * */
 
 public class Constants {
     public static final String
-            login_name = "qa-challenge@craftnote.de",
-            password ="Automation@2020",
-            loginBtn_id = "btn_intro_login",
-            loginName_Field = "et_login_email",
-            password_field = "et_login_password",
-            singIn_btn_id = "btn_login_custom",
-            ok_error_alert = "md_buttonDefaultPositive",
-            searchInput_id ="projectSearchEditText",
-            clearInput_id = "searchClear",
-            permission_location_allow = "com.android.permissioncontroller:id/permission_allow_foreground_only_button",
-            cellProjectList_id = "projectOverviewProjectTitle";
+            lanOfExercises_countOfExercises = "exercise_count_text",
+            planOfExercises_ready_button = "ready_button",
+            mainDashBoard_my_training_arrow = "my_training_arrow",
+            mainDashBoard_knowledge = "knowledge",
+            exercise_count_text = "exercise_count_text",
+            exerciseScreen_equipment_name_text = "equipment_name_text",
+            exerciseScreen_set_number = "set_number_text",
+            exerciseScreen_repetition_number_text = "repetition_number_text",
+            exerciseScreen_title_text = "exercise_title_text",
+            exerciseScreen_start_button = "start_button",
+            exerciseScreen_skip_button = "skip_button",
+            duration_text = "duration_text",
+            waitingScreen_get_ready_text = "get_ready_text",
+            runExerccise_close_button = "close_button",
+            runExerccise_mainProgressText = "mainProgressText",
+            runExerccise_exercise_progress_text = "exercise_progress_text",
+            runExerccise_exo_subtitles = "exo_subtitles",
+            runExerccise_execution_type_label = "execution_type",
+            exit_dialog_popUp = "skip";
 }
+

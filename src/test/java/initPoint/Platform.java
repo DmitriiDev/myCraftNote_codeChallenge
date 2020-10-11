@@ -13,7 +13,7 @@ import java.net.URL;
  */
 
 public class Platform {
-    public  String AppiumURL = "http://127.0.0.1:4724/wd/hub";
+    public  String AppiumURL = "http://127.0.0.1:4723/wd/hub";
     public final String PLATFORM_IOS = "ios";
     public final String PLATFORM_ANDROID = "android";
 
@@ -41,8 +41,10 @@ public class Platform {
         capabilities.setCapability("deviceName","TestDevice");
         capabilities.setCapability("platformVersion","11");
         capabilities.setCapability("automationName","Appium");
-        capabilities.setCapability("appPackage","de.mycrafty.mycrafty");
-        capabilities.setCapability("appActivity","io.bitfactory.mycrafty.ui.splash.SplashActivity");
+        capabilities.setCapability("appPackage","com.casparhealth.android.patient");
+        capabilities.setCapability("appActivity","com.casparhealth.android.patient.splash.SplashActivity");
+        capabilities.setCapability("noReset","true");
+        capabilities.setCapability("disableWindowAnimation","true");
 
         return capabilities;
     }

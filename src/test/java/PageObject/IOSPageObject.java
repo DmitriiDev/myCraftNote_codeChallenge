@@ -8,5 +8,4 @@ public class IOSPageObject extends Main {
     {
         super(driver);
     }
-
 }

@@ -1,10 +1,8 @@
 package initPoint;
 
-import PageObject.SearchPageObject;
-import PageObject.IOSPageObject;
+import PageObject.*;
 import io.appium.java_client.AppiumDriver;
 import junit.framework.TestCase;
-import org.junit.Ignore;
 
 /*
  *  Init class for Appium. There is initialization a driver for the ios or android platforms. As I don't have an app for ios
@@ -13,12 +11,17 @@ import org.junit.Ignore;
  */
 
 
-@Ignore
+//@Ignore
 public class CoreTestCase extends TestCase {
     public AppiumDriver driver;
     public Platform Platform;
-    public SearchPageObject search = new SearchPageObject(driver);
     public IOSPageObject ios = new IOSPageObject(driver);
+    public MainDashBoardScreenObject mainDashBoardScreen = new MainDashBoardScreenObject(driver);
+    public PreparationForTrainingScreenObject preparationTrainScreen = new PreparationForTrainingScreenObject(driver);
+    public ExerciseScreenObject exerciseScreen = new ExerciseScreenObject(driver);
+    public WaitingScreenObject waitOfStartTrain = new WaitingScreenObject(driver);
+    public RunExerciseScreenObject runExerciseScreen = new RunExerciseScreenObject(driver);
+
 
     @Override
     public void setUp() throws Exception
